@@ -1,0 +1,260 @@
+@font-face{
+    font-family: 'myfont';
+    src: url('fonts/bpg_dedaena.otf');
+}
+@font-face{
+    font-family: 'myfont2';
+    src: url('fonts/amiran.ttf');
+}
+*{
+  scroll-behavior: smooth;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+  
+ol, ul {
+  list-style: none;
+}
+body{
+   font-family: myfont2;
+}
+nav {
+    background-color: rgb(218, 216, 237);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    font-family: myfont;
+    z-index: 1000;
+    
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    position: relative; 
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(31, 7, 70);
+    font-size: 25px;
+}
+
+.menu ul li:hover {
+   font-weight: bold;
+}
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(218, 216, 237);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    min-width: 160px; 
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li ul li {
+    display: block;
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.menu ul li ul li a {
+    font-size:17px;
+    color: rgb(31, 7, 70);
+    text-decoration: none;
+}
+
+#logo a {
+    text-decoration: none;
+    color: rgb(31, 7, 70);
+    font-size: 40px;
+}
+
+#logo {
+    margin-left: 2%;
+    
+}
+
+.search {
+    width: 60vw;
+    height: 4vw;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 48px;
+    font-size: 1.5vw;
+    transition: width 1s;
+}
+
+.search:focus {
+    width: 65vw;
+}
+
+.series {
+    display: flex;
+    justify-content: space-between;
+}
+
+.series img {
+    width: 80%;
+    margin-left: 2.5vw;
+    margin-right: 1vw;
+    border-radius: 7px;
+}
+
+.series img:hover {
+    opacity: 0.7;
+}
+.ganrisposteri{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20%;
+}
+.ganrisposteri img{
+    width: 80%;
+    margin-left: 2.5vw;
+    margin-right: 1vw;
+    border-radius: 7px;
+}
+.ganrisposteri img:hover {
+    opacity: 0.7;
+}
+table {
+    width: 100%;
+    margin: auto;
+}
+
+table tr td:hover {
+    color: rgb(117, 195, 244);
+}
+.ganrissatauri {
+     width: 80%;
+    margin-right: 400px;
+}
+
+.tetri {
+    color: white;
+}
+
+.trailer {
+    border-radius: 5px;
+}
+
+.about {
+    display: flex;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.poster img {
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 65px;
+    height: 65%;
+}
+
+.likebtn {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.satauri {
+    font-size: 2.5vw;
+    padding-top: 50px;
+}
+
+p:hover {
+    color: rgb(117, 195, 244);
+}
+
+.satauri a {
+    text-decoration: none;
+    color: black;
+}
+
+.IMDB {
+    color: #EEA51E;
+    font-size: 1.3vw;
+    padding-top: 5px;
+}
+
+.agwera {
+    font-size: 1.3vw;
+    padding: 1px;
+}
+
+.shinaarsi {
+    font-size: 1.3vw;
+    padding: 1px;
+    margin-right: 30px;
+}
+
+span {
+    border-style: solid;
+    color: black;
+    padding: 3px;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.registracia {
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgb(218, 216, 237);
+}
+
+.foni {
+    background-color: rgb(255, 255, 255);
+}
+
+.regis {
+    border-color: rgb(31, 7, 70);
+    border-width: 8px;
+    border-style: dotted;
+    width: 53%;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.ruka{
+    padding: 5px;
+    margin-top: 50px;
+    border-color: rgb(31, 7, 70);
+    border-width: 8px;
+    width: 53%;
+    border-style: dotted;
+    border-radius: 15px;
+}
+.ruka iframe{
+    border-radius: 15px;
+
+}
+.kategoria{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 35px;
+    color: rgb(31, 7, 70);
+
+}
